@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <title>childhood memories</title>
+        <link rel="stylesheet" type="text/css" href="childhood.html">
+    </head>  
+<style>
+   /* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-details {
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+#note{
+   background-image: url("secback.jpg");
+    background-size: cover;
+    background-position: top 50% right 0;
+    padding: 0 70px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+}
+/* Add more styles as needed */
+
+</style>
+<body>
+    <section id="note">
+        <h2><marquee>Contact Information</marquee></h2>
+        <p>If you have any questions or just want to say hi, don't hesitate to reach out!</p>
+
+        <div class="contact-details">
+            <h3>Email</h3>
+            <p><a href="mailto:your.email@example.com">robinkim@gmail.com</a></p>
+        </div>
+
+        <div class="contact-details">
+            <h3>Social Media</h3>
+            <p>Connect with me on:</p>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a></li>
+                <li><a href="https://twitter.com/yourtwitter" target="_blank">Twitter</a></li>
+                <!-- Add more social media links as needed -->
+            </ul>
+        </div>
+
+        <div class="contact-details">
+            <h3>Location</h3>
+            <p>Currently based in Nairobi Kenya</p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send Me a Message</h2>
+            <!-- Add a form for users to submit messages -->
+            <form action="process_form.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Footer content, often includes copyright information, links, etc. -->
+    </footer>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
